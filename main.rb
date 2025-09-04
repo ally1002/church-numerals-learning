@@ -4,6 +4,7 @@
 IDENTITY = ->(x) { x }
 SUCESSOR = ->(n) { ->(f) { ->(x) { f.call(n.call(f).call(x)) } }}
 SUM = ->(m,n) { ->(f) { ->(x) { m.call(f).call(n.call(f).call(x)) } }}
+MULT = ->(m,n) { ->(f) { ->(x) { m.call(n.call(f)).call(x) } }}
 
 ZERO = ->(f) { IDENTITY }
 ONE  = ->(f) { ->(x) { f.call(x) } }
