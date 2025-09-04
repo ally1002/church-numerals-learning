@@ -8,8 +8,8 @@ MULT = ->(m,n) { ->(f) { ->(x) { m.call(n.call(f)).call(x) }}}
 EXP = ->(b,n) { ->(f) { ->(x) { b.call(n.call(f)).call(x) }}}
 
 ZERO = ->(f) { IDENTITY }
-ONE  = ->(f) { ->(x) { f.call(x) } }
-TWO  = ->(f) { ->(x) { f.call(f.call(x)) } }
+ONE  = SUCESSOR.call(ZERO)
+TWO  = SUCESSOR.call(ONE)
 THREE  = SUCESSOR.call(TWO)
 FOUR  = SUCESSOR.call(THREE)
 FIVE  = SUCESSOR.call(FOUR)
@@ -20,4 +20,4 @@ NINE  = SUCESSOR.call(EIGHT)
 
 def to_number(n) = n.call(->(i) { i + 1 }).call(0)
 
-pp to_number(EXP.call(TWO, FIVE))
+pp to_number(EXP.call(THREE, FIVE))
