@@ -2,7 +2,7 @@
 # rubocop:disable all
 
 IDENTITY = ->(x) { x }
-SUCESSOR = ->(n) { ->(f) { ->(x) { f.call(n.call(f).call(x)) }}}
+SUCCESSOR = ->(n) { ->(f) { ->(x) { f.call(n.call(f).call(x)) }}}
 SUM = ->(m) { ->(n) { ->(f) { ->(x) { m.call(f).call(n.call(f).call(x)) }}}}
 
 MULT = ->(m) { ->(n) { ->(f) { ->(x) { m.call(n.call(f)).call(x) }}}}
@@ -11,15 +11,15 @@ EXP = ->(b) { ->(n) { n.call(b) } }
 SECONDWAY_TO_EXP = ->(b) { ->(n) { ->(f) { ->(x) { n.call(b).call(f).call(x) } } } }
 
 ZERO = ->(f) { IDENTITY }
-ONE  = SUCESSOR.call(ZERO)
-TWO  = SUCESSOR.call(ONE)
-THREE  = SUCESSOR.call(TWO)
-FOUR  = SUCESSOR.call(THREE)
-FIVE  = SUCESSOR.call(FOUR)
-SIX  = SUCESSOR.call(FIVE)
-SEVEN  = SUCESSOR.call(SIX)
-EIGHT  = SUCESSOR.call(SEVEN)
-NINE  = SUCESSOR.call(EIGHT)
+ONE  = SUCCESSOR.call(ZERO)
+TWO  = SUCCESSOR.call(ONE)
+THREE  = SUCCESSOR.call(TWO)
+FOUR  = SUCCESSOR.call(THREE)
+FIVE  = SUCCESSOR.call(FOUR)
+SIX  = SUCCESSOR.call(FIVE)
+SEVEN  = SUCCESSOR.call(SIX)
+EIGHT  = SUCCESSOR.call(SEVEN)
+NINE  = SUCCESSOR.call(EIGHT)
 
 def to_number(n) = n.call(->(i) { i + 1 }).call(0)
 
