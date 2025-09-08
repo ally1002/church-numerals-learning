@@ -67,5 +67,21 @@ I can't explain how EXP really works. I've already tried thinking it through,
 writing it out on paper, and talking about it with friends, but the more I try,
 the dumber I feel.
 
+### Day four
+
+Today was really exciting, and I've finally learned how to implement
+exponentiation in Church encoding. It's really simple when you see the path it
+takes. The exponentiation function takes a base b and an exponent n. For
+example, to calculate 5^3, the base b is FIVE and the exponent n is THREE. The
+operation works by applying the exponent n to the base b. The THREE function
+takes FIVE as its input and creates a new function by composing FIVE with
+itself three times (FIVE x FIVE x FIVE). This composition results in a new
+Church numeral (in this case, for 125). To convert this numeral into an
+integer, we then provide it with an incrementing function and a starting value
+of 0.
+
+Tomorrow I will search out for prediction, It doesn't make any sense, how can I
+decrease one function call inside a function call, I'll try to figure this out tomorrow, gotta work now.
+
 ---
 _Created by [@ally1002](https://github.com/ally1002)_
