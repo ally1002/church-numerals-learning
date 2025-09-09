@@ -9,11 +9,6 @@ The talk was about the `Church Encoding` and how it works, how it can be used
 to implement a mathematical language, this is my goal here, learning while
 implementing it in ruby as a way to develop my logic skills.
 
-I'll document my progress in this README, and also I'll try to explain the
-concepts I'm learning in the code and my thoughts while learning more about it,
-so if you want to learn more about it, you can read the
-[wiki](https://en.wikipedia.org/wiki/Church_encoding) about it.
-
 I'll document my progress in this README. I'll also try to explain my thought
 process and the concepts I'm learning. If you want to learn more, you can read
 the [Wikipedia article](https://en.wikipedia.org/wiki/Church_encoding) on the topic.
@@ -82,6 +77,18 @@ of 0.
 
 Tomorrow I will search out for prediction, It doesn't make any sense, how can I
 decrease one function call inside a function call, I'll try to figure this out tomorrow, gotta work now.
+
+### Day five
+
+Learning `PREDECESSOR`... I can't explain how `g` and `h` work, I know the
+function now works, it acts like a caret and always returns the previous value
+instead of the current value, but how does it work internally? how `g`, `h`, `f`,
+`x`, and `u` combine to create this logic? I don't know, it is really weird.
+
+Tomorrow I will ask an LLM to help me understand, it has been a really good
+practice, since I'm doing this to learn more about and not to work with it, I
+will allow myself consult an LLM to help me understand what's happening
+inside the code.
 
 ---
 _Created by [@ally1002](https://github.com/ally1002)_
