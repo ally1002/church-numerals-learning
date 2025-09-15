@@ -76,7 +76,8 @@ integer, we then provide it with an incrementing function and a starting value
 of 0.
 
 Tomorrow I will search out for prediction, It doesn't make any sense, how can I
-decrease one function call inside a function call, I'll try to figure this out tomorrow, gotta work now.
+decrease one function call inside a function call, I'll try to figure this out
+tomorrow, gotta work now.
 
 ### Day five
 
@@ -89,6 +90,17 @@ Tomorrow I will ask an LLM to help me understand, it has been a really good
 practice, since I'm doing this to learn more about and not to work with it, I
 will allow myself consult an LLM to help me understand what's happening
 inside the code.
+
+### Day six
+
+Learning `PREDECESSOR` is really hard. I've been trying to understand it for 30
+minutes straight, but I still don't get it. I'm not sure if I'm thinking about
+it correctly. I asked Gemini to help me, it tried to explain it to me, but it
+still doesn't make sense. I'm really confused, I don't know what's happening
+inside the code, I'm just trying to understand it.
+
+Tomorrow I will try to understand it better, I'll ask Gemini to help me, and
+maybe I'll get it.
 
 ---
 _Created by [@ally1002](https://github.com/ally1002)_
